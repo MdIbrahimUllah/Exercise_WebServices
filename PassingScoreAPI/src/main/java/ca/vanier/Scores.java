@@ -2,10 +2,10 @@ package ca.vanier;
 
 public class Scores {
 
-    void check(int score){
-        if (score<6) System.out.println("fail");
+    boolean check(int score){
+        if (score<6) return false;
         else
-        System.out.println("passed");
+        return true;
 
     }
     
