@@ -16,6 +16,7 @@ public class ScoresTest{
     assertTrue("Checking if scores grater than 6", answer == true);
 }
 
+//when the case is false
 @Test
     public void testResultFalse(){
     String args = "8";
