@@ -9,6 +9,5 @@ public class ScoresTest{
     @Test
     public void testResult(){
     String args = "6";
-    
     }
 }
