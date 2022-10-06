@@ -6,40 +6,23 @@ import static org.junit.Assert.assertFalse;
 
 import org.junit.Test;
 
-public class ScoresTest{
+public class ScoresTest{ 
     //when the case is grater than 6
     @Test
-    public void testResultTrue1(){
+    public void testResultTrue(){
     String args = "7";
     boolean answer = Scores.result(args);
     assertNotNull(answer);
-    assertTrue("Checking if scores grater than 6", answer == true);
+    assertTrue("Checking if scores grater than 6", answer);
 }
 
 //when the case is less than 6
 @Test
-public void testResultTrue2(){
+public void testResultFalse(){
 String args = "5";
 boolean answer = Scores.result(args);
 assertNotNull(answer);
-assertTrue("Checking if scores less than 6", answer == false);
+assertFalse("Checking if scores less than 6", answer);
 }
 
-//when the case is grater than 6
-@Test
-    public void testResultFalse1(){
-    String args = "8";
-    boolean answer = Scores.result(args);
-    assertNotNull(answer);
-    assertFalse("Checking if scores grater than 6", answer == false);
-    }
-
-    //when the case is less than 6
-@Test
-public void testResultFalse2(){
-String args = "8";
-boolean answer = Scores.result(args);
-assertNotNull(answer);
-assertFalse("Checking if scores less than 6", answer == false);
-}
 }
